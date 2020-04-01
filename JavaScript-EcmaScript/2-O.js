@@ -1,7 +1,7 @@
 // Open Close Principle
 
 class Shape {
-    area() {
+    area() { // є обов'язковим для OCP
         throw new Error('Area method should be implemented') // Слід застосувати метод області
     }
 }
@@ -12,7 +12,7 @@ class Square extends Shape {
         this.size = size
     }
 
-    area() {
+    area() {// є обов'язковим для OCP
         return this.size ** 2
     }
 }
@@ -23,7 +23,7 @@ class Circle extends Shape {
         this.radius = radius
     }
 
-    area() {
+    area() { // є обов'язковим для OCP
         return (this.radius ** 2) * Math.PI
     }
 }
@@ -35,7 +35,7 @@ class Rect extends Shape {
         this.height = height
     }
 
-    area() {
+    area() { // є обов'язковим для OCP
         return this.width * this.height
     }
 }
@@ -47,7 +47,7 @@ class Triangle extends Shape {
         this.b = b
     }
 
-    area() {
+    area() { // є обов'язковим для OCP
         return (this.a * this.b) / 2
     }
 }
@@ -57,7 +57,7 @@ class AreaCalculator {
         this.shapes = shapes
     }
 
-    sum() {
+    sum() { // є обов'язковим для OCP
         return this.shapes.reduce((acc, shape) => {
             acc += shape.area()
             return acc
