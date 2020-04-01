@@ -40,7 +40,7 @@ openSecretDoor(new Backend())
 // ===============
 
 
-// ===== 2 приклад =====
+// ===== 2 приклад [рендеринг компонентів] =====
 class Component { // є обов'язковим для LSP
     isComponent = true
 }
